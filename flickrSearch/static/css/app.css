@@ -1,0 +1,152 @@
+/* app css stylesheet */
+
+
+
+html, body {
+  font-family: 'Roboto Slab', serif;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    font-size: 21px;
+  }
+  .navbar-brand {
+    font-size: 21px;
+  }
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+  font-family: 'Lobster', cursive;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+#view {
+  height: auto !important;
+  height: 100%;
+  display: block;
+  /* Negative indent footer by it's height */
+  /*margin: 0 auto -30px;*/
+}
+
+header {
+  /*position: fixed;*/
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+footer {
+  /*bottom: 0;*/
+  width: 100%;
+  /*position: absolute;*/
+}
+
+.logo-inline {
+    display: inline-block;
+}
+
+
+/*!* Smartphones (portrait and landscape) ----------- *!*/
+/*@media only screen*/
+/*and (min-device-width : 320px)*/
+/*and (max-device-width : 480px) {*/
+  /*!* Styles *!*/
+/*}*/
+
+/*!* Smartphones (landscape) ----------- *!*/
+/*@media only screen*/
+/*and (min-width : 321px) {*/
+  /*#view {*/
+    /*min-height: 69%;*/
+  /*}*/
+/*}*/
+
+/*!* Smartphones (portrait) ----------- *!*/
+/*@media only screen*/
+/*and (max-width : 320px) {*/
+  /*!* Styles *!*/
+/*}*/
+
+/*!* iPads (portrait and landscape) ----------- *!*/
+/*@media only screen*/
+/*and (min-device-width : 768px)*/
+/*and (max-device-width : 1024px) {*/
+  /*!* Styles *!*/
+  /*#view {*/
+    /*min-height: 84%;*/
+  /*}*/
+/*}*/
+
+/*!*!* iPads (landscape) ----------- *!*!*/
+/*!*@media only screen*!*/
+/*!*and (min-device-width : 768px)*!*/
+/*!*and (max-device-width : 1024px)*!*/
+/*!*and (orientation : landscape) {*!*/
+  /*!*!* Styles *!*!*/
+/*!*}*!*/
+
+/*!*!* iPads (portrait) ----------- *!*!*/
+/*!*@media only screen*!*/
+/*!*and (min-device-width : 768px)*!*/
+/*!*and (max-device-width : 1024px)*!*/
+/*!*and (orientation : portrait) {*!*/
+  /*!*!* Styles *!*!*/
+/*!*}*!*/
+
+/*!* Desktops and laptops ----------- *!*/
+/*@media only screen*/
+/*and (min-width : 1224px) {*/
+  /*!* Styles *!*/
+  /*#view {*/
+    /*min-height: 92%;*/
+  /*}*/
+/*}*/
+
+/*!* Desktops and laptops ----------- *!*/
+/*@media only screen*/
+/*and (min-width : 1224px)*/
+/*and (orientation : landscape) {*/
+  /*!* Styles *!*/
+  /*#view {*/
+    /*min-height: 80%;*/
+  /*}*/
+/*}*/
+
+/*!* Large screens ----------- *!*/
+/*@media only screen*/
+/*and (min-width : 1824px) {*/
+  /*!* Styles *!*/
+  /*#view {*/
+    /*min-height: 81%;*/
+  /*}*/
+/*}*/
+
+/*!* iPhone 4 - 5s ----------- *!*/
+/*@media*/
+/*only screen and (-webkit-min-device-pixel-ratio : 1.5),*/
+/*only screen and (min-device-pixel-ratio : 1.5) {*/
+  /*!* Styles *!*/
+/*}*/
+
+/*!* iPhone 6 ----------- *!*/
+/*@media*/
+/*only screen and (max-device-width: 667px)*/
+/*only screen and (-webkit-device-pixel-ratio: 2) {*/
+  /*!* Styles *!*/
+  /*#view {*/
+    /*min-height: 69%;*/
+  /*}*/
+/*}*/
+
+/*!* iPhone 6+ ----------- *!*/
+/*@media*/
+/*only screen and (min-device-width : 414px)*/
+/*only screen and (-webkit-device-pixel-ratio: 3) {*/
+  /*!*** You've spent way too much on a phone ***!*/
+/*}*/

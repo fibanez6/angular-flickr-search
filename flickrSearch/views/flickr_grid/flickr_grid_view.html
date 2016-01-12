@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row voffset-4">
+        <H1>Flickr Search</H1>
+        <form ng-submit="clear(); search(flickr.text)" role="form" class="form-horizontal">
+            <div class="col-md-12">
+                <div class="form-group form-group-lg">
+                    <input type="text" class="form-control"
+                           placeholder="Text or Tags" aria-describedby="basic-addon1"
+                           id="flickr-text" ng-model="flickr.text">
+                </div>
+            </div>
+            <div class="next">
+                <input type="submit" class="btn btn-primary btn-lg pull-right">
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+        <div infinite-scroll='nextPage()' infinite-scroll-disabled='{{loading}}' infinite-scroll-distance='5'>
+            <ul class="dynamic-grid"
+                angular-grid="photos" grid-width="300" gutter-size="10" angular-grid-id="flickr" refresh-on-img-load="false" >
+                <li ng-repeat="photo in photos" class="grid">
+                    <a href="{{photo.url_o}}" target="_blank">
+                        <img src="{{photo.url_n}}" class="grid-img" data-actual-width = "{{photo.width_n}}"  data-actual-height="{{photo.height_n}}"/>
+                    </a>
+                    <div class="row padding-1">
+                        <div class="col-md-12">
+                            <a href="{{photo.url_o}}" target="_blank">
+                                {{photo.title.substring(0,(photo.title.indexOf('#')>0)?photo.title.indexOf('#'):photo.title.length)}}
+                            </a>
+                            by <a href="https://www.flickr.com/photos/{{photo.owner}}/" target="_blank">{{photo.ownername}}</a>
+                        </div>
+                    </div>
+                    <div ng-if="photo.tags" class="row padding-1">
+                        <div class="col-md-12">
+                            <h4>Tags: </h4>
+                            <p ng-text-truncate="photo.tags" ng-tt-words-threshold="5"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div ng-show='loading'>
+                <div class="spinner">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

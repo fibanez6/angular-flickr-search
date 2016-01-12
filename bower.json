@@ -1,0 +1,22 @@
+{
+  "name": "fibanez_flickr_search",
+  "description": "This project is a small Angular project which uses Flickr API",
+  "version": "0.0.1",
+  "homepage": "https://github.com/fibanez6/fibanez_flickr_search",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-loader": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "angular-resource": "~1.4.8",
+    "angular-animate": "1.4.x",
+    "angular-ui-router": "0.2.x",
+    "angular-scroll": "0.7.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.6",
+    "html5-boilerplate": "~5.2.0",
+    "ng-scrollbars": "~0.0.5"
+  }
+}
