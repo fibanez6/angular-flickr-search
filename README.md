@@ -9,7 +9,7 @@ Technologies:
 * Bower v1.6.5  
 * Grunt v0.4.5  
 
-Flickr Api [doc]  (https://www.flickr.com/services/api/)
+Flickr Api [doc]  (https://www.flickr.com/services/api/)  
 Read [wiki](https://github.com/fibanez6/fibanez_flickr_search/wiki/)
 
 [git]: http://git-scm.com/
