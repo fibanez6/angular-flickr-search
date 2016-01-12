@@ -1,6 +1,6 @@
 # Fibanez Flickr Search
 
-This project is a small Angular project which uses Flickr API
+This project is a small Angular project to search for images on Flickr.
 
 Technologies:  
 * NodeJS v0.12.7  
